@@ -1,0 +1,63 @@
+.flip-3D {
+    margin-top: 40px;
+
+}
+
+@media (max-width: 635px) {
+    .back p {
+        font-size:13px;
+    }
+}
+
+@media (min-width: 636px) {
+    .back p {
+        font-size:17px;
+    }
+}
+
+
+.flip-3D > .front {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    height:300px;
+    backface-visibility: hidden;
+    transition: transform 1.5s linear 0s;
+    transition: -webkit-transform  1.5s linear 0s;
+  }
+
+.flip-3D > .back {
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 0 15px;
+    color: grey;
+    height:300px;
+    top: 0;
+    font-size: 20px;
+    font-family:arial;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+  }
+
+
+.flip-3D:hover >.front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-3D:hover >.back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+Chat conversation end
+Type a message...
+
+
+
+
+Found 0 results
+notificationnotification
+close
